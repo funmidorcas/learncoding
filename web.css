@@ -1,0 +1,130 @@
+html {
+    background: grey;
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.social-icons {
+    display: grid;
+    font-size: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  button {
+    border: 1px solid red;
+    margin: 50px 20px; 
+    padding: 5px;
+border-radius: 22px;
+justify-content: space-between;
+  }
+  
+  #whatsapp{
+    color: white;
+    background: green;
+    animation-name: red-black;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: 3;
+  }
+  .header{
+    text-align: center;
+  
+  }
+  #title{
+    color: rgba(20, 190, 212, 0.87);
+    background: rgb(41, 41, 66);
+    text-align: start;
+   padding-top: 5px;
+   margin-left: 5px;
+   margin-top: 20px;
+    width: full;
+    height: 10%;
+  }
+img, figcaption {
+  display: flex;
+  border: 1px solid black;
+  margin: 15px; 
+  border-radius: 22px;
+  
+  }
+  #updates{
+    background: rgb(3, 3, 29);
+}
+figcaption {
+  width: 200px;
+  height: 35px;
+ font-size: 1em;
+  color:rgb(204, 229, 255);
+  justify-content: center;
+  padding-top: 7px;
+  padding-bottom: 7px;}
+
+  select{
+    border: none;
+   }
+   #sale{
+    height: 25%;
+    background:rgba(20, 190, 212, 0.87);
+}
+.out{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+}
+  h1 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+  }
+  .note{
+    text-align: end;
+  }
+input[type="submit"] {
+  width: 15%;
+  background: rgb(125, 145, 135);
+ font-size: 1.1em;
+ border-radius: 22px;
+}
+#product-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto; 
+  margin-bottom: 6rem;
+  background: rgb(91, 107, 66)}
+
+  .product{ display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+justify-content: center;
+}
+
+li{
+  list-style: none;}
+#list{
+  display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    color: blue;
+    margin-top: 25px;
+}
+#shoe{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto; 
+  margin-bottom: 6rem;
+  background: rgb(99, 139, 33)}
+  #slippers{
+   
+    color: green;
+    height: 0px;
+  }

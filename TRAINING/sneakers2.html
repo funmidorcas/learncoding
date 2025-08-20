@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+    <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script></head>
+<body class="sm:w-[375px]">
+    <div class="flex justify-space-around">
+        <h1 class="sneaker">Sneakers</h1>
+    
+        <div class="menu">
+            <nav class="nav-bar set">
+           
+               <input type="checkbox" id="sidebar-active">
+               <label for="sidebar-active" class="open">
+                   <i class="fa-solid fa-bars icon"><span class=show>menu</span></i>    
+               </label>
+               <label id="overlay" for="sidebar-active"></label>
+           
+               <div class="links">
+                   <label for="sidebar-active" class="close">
+                       <i class="fa-solid fa-xmark icon"></i>
+                   </label>
+           
+           
+               <ul class="menu-ul">
+                   <li><a href="#home" class="set">Collection</a></li>
+                <li><a href="#procedure" class="set">Men</a></li>
+                   <li><a href="#ingredient" class="set">Women</a></li>
+                   <li><a href="#ingredient" class="set">About Us</a></li>
+           <li><a href="#contact-us" class="set">Contact</a></li>
+               </ul>
+           </nav>
+           </div>
+           
+    <div class="second">
+        <span><p id="top"></p>
+        <i class="fa-solid fa-cart-shopping log"></i></span>
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRtBAhkcO9Fy7UddU5bmgJIn3R90Ad3yzpuI_J90Fw40QsKkg&s" alt="">
+    </div>
+    </div>
+    
+
+<div class="container">
+    <div class="hold">
+    <div class="contain-pic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD1keDwx7zd7b5JdkfHiLMM1b6iS4olZmOLg&s" alt="">
+        </div>
+        <div class="pic-set">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD1keDwx7zd7b5JdkfHiLMM1b6iS4olZmOLg&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD1keDwx7zd7b5JdkfHiLMM1b6iS4olZmOLg&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD1keDwx7zd7b5JdkfHiLMM1b6iS4olZmOLg&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD1keDwx7zd7b5JdkfHiLMM1b6iS4olZmOLg&s" alt="">
+
+        </div>   
+    </div>
+    <div class="container2">
+    <h4 class="head">SNEAKER COMPANY</h4>
+<h1 class="fall">Fall Limited Edition Sneakers</h1>
+ <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis suscipit repudiandae iure molestias. Doloremque optio magni rerum suscipit laudantium.</p>
+ <div class="percent2">
+ <div class="percent">
+    <p class="price">$125.00</p>
+    <button class="five">50%</button>
+</div>
+<p class="price2">$250.00</p>
+</div>
+<div class="holder">
+<div class="add">
+    <button class="minus" onclick="reduce()">-</button>
+    <span class="number">0</span>
+    <button class="added" onclick="increment()">+</button>
+    </div>
+    <div class="cart" >
+        <i class="fa-solid fa-cart-shopping last"></i>
+            <button class="to">  Add to Cart
+        </button>
+    </div>
+    <p id="note"></p>
+
+</div>
+</div>
+</div>
+
+
+<script>
+
+const minus = document.querySelector(".minus")
+const added = document.querySelector(".added")
+const counting = document.querySelector(".number") 
+const note = document.getElementById("note")
+const to = document.querySelector(".to") 
+const cart = document.getElementById("top")
+let count = 0
+let cartTotal = 0
+
+added.addEventListener("click", function(){
+    count = count + 1
+    counting.textContent = count 
+})
+minus.addEventListener("click", function(){
+if (count > 0){
+    count = count - 1
+    counting.textContent = count
+ }
+})
+
+to.addEventListener("click", function(){
+
+if( count > 0){
+    message = "added"
+    note.textContent = message
+     
+     cartTotal += count
+ cart.textContent = cartTotal
+
+  count = 0
+counting.textContent = 0
+}
+setTimeout(() => {
+        note.textContent = ""
+    }, 1000)
+})
+</script>
+</body>
+</html>
