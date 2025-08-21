@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="on.css">
+  <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+  <title>Toggle ON/OFF</title>
+</head>
+<body>
+
+<div class="tog-container">
+  <button class="switch" id="toggleBtn1" style="display: block;">
+    <span>Phase 1 <i class="fa-solid fa-lightbulb"></i></span>
+  </button>
+  <div id="note1" class="note" style="display: none;">
+    <h4 class="dev">Development and Launch</h4>
+    <p class="dev-note">This is Phase 1 content.</p>
+  </div>
+</div>
+
+<div class="tog-container">
+  <button class="switch" id="toggleBtn2" style="display: block;">
+    <span>Phase 2 <i class="fa-solid fa-lightbulb"></i></span>
+  </button>
+  <div id="note2" class="note" style="display: none;">
+    <h4 class="dev">Development and Launch</h4>
+    <p class="dev-note">This is Phase 2 content work.</p>
+  </div>
+</div>
+
+<div class="tog-container">
+  <button class="switch" id="toggleBtn3" style="display: block;">
+    <span>Phase 3 <i class="fa-solid fa-lightbulb"></i></span>
+</button>
+
+<div id="note3" class="note" style="display: none;">
+    <h4 class="dev">Development and Launch</h4>
+    <p class="dev-note">This is Phase 3 content work.</p>
+  </div>
+</div>
+
+<script>
+const buttons = [
+  document.getElementById("toggleBtn1"),
+  document.getElementById("toggleBtn2"),
+  document.getElementById("toggleBtn3"),
+];
+
+const notes = [
+  document.getElementById("note1"),
+  document.getElementById("note2"),
+  document.getElementById("note3"),
+];
+
+const colors = ["#f8d7da", "#d1ecf1", "#d4edda"];
+
+buttons.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    buttons.forEach((b, idx) => {
+      if (idx === i) {
+        b.style.display = "none";      // hide clicked button
+        notes[idx].style.display = "block";  // show corresponding note
+        notes[idx].style.backgroundColor = colors[i];
+      } else {
+        b.style.display = "block";     // show other buttons
+        notes[idx].style.display = "none";   // hide other notes
+        notes[idx].style.backgroundColor = "";
+      }
+    });
+  });
+});
+
+notes.forEach((note, i) => {
+  note.addEventListener("click", () => {
+    note.style.display = "none";
+    buttons[i].style.display = "block";
+    note.style.backgroundColor = "";
+  });
+});
+</script>
+</body>
+</html>

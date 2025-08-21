@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="on.css">
+  <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+  <title>Toggle ON/OFF</title>
+</head>
+<body>
+
+
+ <!-- <div class="approach">
+    <div class="app">
+
+      <h4 class="dev">Development and Launch </h4>
+       <p class="dev-note">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit sunt in, dolore aliquid nobis maiores laboriosam neque voluptatibus dignissimos modi?</p>    
+    </div>
+    <div class="app">
+      <h4 class="dev">Development and Launch </h4>
+       <p class="dev-note">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit sunt in, dolore aliquid nobis maiores laboriosam neque voluptatibus dignissimos modi?</p>    
+    </div>
+    <div class="app">
+      <h4 class="dev">Development and Launch </h4>
+       <p class="dev-note">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit sunt in, dolore aliquid nobis maiores laboriosam neque voluptatibus dignissimos modi?</p>    
+    </div>
+ </div> -->
+
+
+
+
+
+
+<!-- <div class="tog-container">
+  <button class="switch" id="toggleBtn" style="display: block;">
+    <span id="phrase">Phase 1 <i class="fa-solid fa-lightbulb"></i></span>
+  </button>
+
+  <div id="note1" class="note" style="display: none;">
+    <h4 class="dev">Development and Launch</h4>
+    <p class="dev-note">This is Phase 1 content.</p>
+  </div>
+</div>
+
+<div class="toll-container">
+  <button class="switcher" id="togBtn" style="display: block;">
+    <span id="phrase">Phase 2 <i class="fa-solid fa-lightbulb"></i></span>
+  </button>
+
+  <div id="note1" class="note" style="display: none;">
+    <h4 class="dev">Development and Launch</h4>
+    <p class="dev-note">This is Phase 2 content work.</p>
+  </div>
+</div> -->
+
+
+
+<div class="tog-container">
+  <button class="switch" id="toggleBtn" style="display: block;">
+    <span>Phase 1 <i class="fa-solid fa-lightbulb"></i></span>
+  </button>
+
+  <div id="note1" class="note" style="display: none;">
+    <h4 class="dev">Development and Launch</h4>
+    <p class="dev-note">This is Phase 1 content.</p>
+  </div>
+</div>
+
+<div class="toll-container">
+  <button class="switcher" id="togBtn" style="display: block;">
+    <span>Phase 2 <i class="fa-solid fa-lightbulb"></i></span>
+  </button>
+
+  <div id="note2" class="note" style="display: none;">
+    <h4 class="dev">Development and Launch</h4>
+    <p class="dev-note">This is Phase 2 content work.</p>
+  </div>
+</div>
+
+
+ <!-- const toggleBtn = document.getElementById("toggleBtn");
+ const note1 = document.getElementById("note1");
+
+ toggleBtn.addEventListener("click", () => {
+   toggleBtn.style.display = "none";
+   note1.style.display = "block";
+ });
+
+ note1.addEventListener("click", () => {
+   note1.style.display = "none";
+   toggleBtn.style.display = "block";
+ });
+
+ -->
+
+
+<script>
+
+const toggleBtn1 = document.getElementById("toggleBtn");
+const note1 = document.getElementById("note1");
+const toggleBtn2 = document.getElementById("togBtn");
+const note2 = document.getElementById("note2");
+
+toggleBtn1.addEventListener("click", () => {
+toggleBtn1.style.display = "none";
+  note1.style.display = "block";
+
+  // Reset second toggle
+  note2.style.display = "none";
+  toggleBtn2.style.display = "block";
+});
+
+// note1.addEventListener("click", () => {
+//   note1.style.display = "none";
+//   toggleBtn1.style.display = "block";
+// });
+
+toggleBtn2.addEventListener("click", () => {
+  toggleBtn2.style.display = "none";
+  note2.style.display = "block";
+
+  // Reset first toggle
+  note1.style.display = "none";
+  toggleBtn1.style.display = "block";
+});
+
+// note2.addEventListener("click", () => {
+//   note2.style.display = "none";
+//   toggleBtn2.style.display = "block";
+// });
+
+  </script>
+
+</body>
+</html>
