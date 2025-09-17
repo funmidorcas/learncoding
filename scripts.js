@@ -250,6 +250,10 @@ sortFruit()
 //let word = "banana";
 //console.log(word.indexOf("a")); // 1 (first "a")
 
+//if (text.includes("code")) {
+  //alert("Found!");
+//}
+
 
 //.replace()
 //let sentence = "I like rice";
@@ -264,6 +268,17 @@ sortFruit()
 //.startWith()
 //let name = "Dorcas";
 //console.log(name.startsWith("Dor")); // true
+//const text = "codeacademy";
+
+//if (text.startsWith("code")) {
+  //alert("Starts with 'code'!");
+//} else {
+ // alert("Does not start with 'code'");
+//}
+
+
+
+
 
 //.concat()
 //let first = "Good ";
@@ -482,10 +497,10 @@ sortFruit()
 // }
 // console.log(getHand())
 
-let cardss = [7, 3, 4]
-for (let e= 0; e < cardss.length; e++){
-  console.log(cardss[e])
-}
+// let cardss = [7, 3, 4]
+// for (let e= 0; e < cardss.length; e++){
+//   console.log(cardss[e])
+// }
 // let info = ["Hi", "my name", "is", "Funmi", "Adeniji"]
 //   let greeting = document.getElementById("greeting")
 //   console.log(greeting)
