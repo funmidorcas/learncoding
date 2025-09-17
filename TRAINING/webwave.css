@@ -18,7 +18,7 @@ body{
     flex-direction: column;
     position: fixed;
     z-index: 10;
-    width: 1300px;
+    width: 100%;
 } 
 .contain{
     display: flex;
@@ -59,6 +59,10 @@ margin-right: 100px;
 .start:hover{
 background: rgb(41, 163, 41);
 }
+
+@media (max-width: 480px) {
+}
+
 /* hr */
 .fixed{
     display: flex;

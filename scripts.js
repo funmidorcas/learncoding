@@ -228,6 +228,67 @@ sortFruit()
 
 
 
+//.length
+//let name = "Funmi";
+//console.log(name.length); // 5
+
+//.toupperCase()
+//let text = "hello";
+//console.log(text.toUpperCase()); // "HELLO"
+
+//.toLowerCase()
+//let text = "WORLD";
+//console.log(text.toLowerCase()); // "world"
+  
+
+//.includes()
+//let fruit = "mango";
+//console.log(fruit.includes("man")); // true
+
+
+//indexOf()
+//let word = "banana";
+//console.log(word.indexOf("a")); // 1 (first "a")
+
+
+//.replace()
+//let sentence = "I like rice";
+//console.log(sentence.replace("rice", "beans")); // "I like beans"
+
+
+//.chartAt()
+//let name = "Peace";
+//console.log(name.charAt(2)); // "a"
+
+
+//.startWith()
+//let name = "Dorcas";
+//console.log(name.startsWith("Dor")); // true
+
+//.concat()
+//let first = "Good ";
+//let second = "Morning";
+//console.log(first.concat(second)); // "Good Morning"
+
+//.trim()
+//let text = "   Hello World!   ";
+//console.log(text.trim()); // "Hello World!"
+
+
+//.split()
+//let fruits = "apple,banana,orange";
+//let fruitArray = fruits.split(",");
+//console.log(fruitArray); // ["apple", "banana", "orange"]
+//let sentence = "I love coding";
+//console.log(sentence.split(" ")); // ["I", "love", "coding"]
+//let word = "banana";
+//let letters = word.split("");
+//console.log(letters); 
+// ["b", "a", "n", "a", "n", "a"]
+//let name = "Funmi";
+//let result = name.split(","); 
+//console.log(result); 
+// ["Funmi"] (because there's no comma in the string)
 
 
 
@@ -385,9 +446,23 @@ sortFruit()
 // largeCountries.unshift("SA")
 // console.log(largeCountries)
 
-//let fruits = ["apple", "banana", "orange"];
-//fruits.splice(1, 0, "grape"); // Insert "grape" at index 1
-//console.log(fruits);
+// let fruits = ["apple", "banana", "orange"];
+// fruits.splice(1, 0, "grape"); // Insert "grape" at index 1
+// console.log(fruits);
+
+//const users = [
+ // { name: "Funmi", age: 25 },
+//  { name: "Sam", age: 30 },
+  //{ name: "Lola", age: 22 }
+//];
+
+// Loop through each user and print their name and age
+//for (let i = 0; i < users.length; i++) {
+  //console.log(`User i + 1:{users[i].name}, Age: ${users[i].age}`);
+//}
+
+
+
 
 // for loop lesson
 // for( let i = 10; i < 20; i +=2){
@@ -407,10 +482,10 @@ sortFruit()
 // }
 // console.log(getHand())
 
-// let cardss = [7, 3, 4]
-// for (let e= 0; e < cardss.length; e++){
-//   console.log(cardss[e])
-// }
+let cardss = [7, 3, 4]
+for (let e= 0; e < cardss.length; e++){
+  console.log(cardss[e])
+}
 // let info = ["Hi", "my name", "is", "Funmi", "Adeniji"]
 //   let greeting = document.getElementById("greeting")
 //   console.log(greeting)

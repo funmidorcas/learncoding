@@ -7,7 +7,7 @@
 }
 #header{
     
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(img/banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzJZlbnFlN9IMYfYJbTdPxCaWfhbBGNtg6TQ&s);
     min-height: 100vh;
     width: 100%;
     background-position: center;
@@ -271,7 +271,7 @@ display: flex;
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/banner2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://media.istockphoto.com/id/1424163793/video/dolly-zooms-into-the-chalkboard-a-high-school-classroom-with-no-student-and-teacher-because.jpg?s=640x640&k=20&c=C-ZaRqrOvHk1yXyJBXbk4-WDElsW5EiZm31HZG-PCNk=);
     background-position: center;
     background-size: cover;
     text-align: center;
