@@ -307,6 +307,25 @@ sortFruit()
 
 
 
+// let name = "Funmi";
+// let age = 25;
+// let isStudent = true;
+// let hobbies = ["music", "reading"];
+// let address = { city: "Lagos" };
+// let nothing = null;
+// let notDefined;
+
+// console.log(typeof name);       // "string"
+// console.log(typeof age);        // "number"
+// console.log(typeof isStudent);  // "boolean"
+// console.log(typeof hobbies);    // "object"
+// console.log(typeof address);    // "object"
+// console.log(typeof nothing);    // "object" (JavaScript quirk)
+// console.log(typeof notDefined); // "undefined"
+
+
+
+
 
 
    // **to save without showing*
@@ -437,7 +456,7 @@ sortFruit()
 // course.sayHello()
 
 // array lesson
-// let mesages = [Funmi", 
+// let mesages = ["Funmi", 
 //     "DOrcas", "Toyin"
 
 // ]
@@ -461,6 +480,7 @@ sortFruit()
 // largeCountries.unshift("SA")
 // console.log(largeCountries)
 
+// .splice lesson
 // let fruits = ["apple", "banana", "orange"];
 // fruits.splice(1, 0, "grape"); // Insert "grape" at index 1
 // console.log(fruits);
